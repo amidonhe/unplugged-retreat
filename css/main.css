@@ -537,6 +537,41 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Features */
+  .features .content-wrapper {
+    margin: 70px 0 100px;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .review-body {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+  .retreat-photo {
+   width: 49%;
+   justify-content: flex-start;
+  }
+  .reviews .lacrue {
+    width: 49%;
+  }
+
+/* ==========================================================================
+  DESKTOP -- About Page
+  ========================================================================== */
+
+/* ==========================================================================
+  DESKTOP -- FAQ Page
+  ========================================================================== */
+
 }
 
 @media print,
