@@ -139,6 +139,15 @@ address {
   font-style: normal;
 }
 
+/* ---- IMAGES AND FIGURES ---- */ 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 /* ---- CONTENT WRAPPER ---- */ 
 .content-wrapper {
   min-width: 360px;
@@ -168,6 +177,14 @@ address {
    margin: 0;
   }
   
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
  .header-divider {
 	 width: 100%;
    height: 1px;
@@ -237,9 +254,12 @@ address {
 
 /* Hero Area */
 .hero-area {
+  background: url('../img/bridge-header-photo.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  min-height: 500px;
 }
 
 /* Aside */
@@ -280,6 +300,8 @@ input[type=button] {
 /* ---- FEATURES SECTION ---- */ 
 
 .features {
+  background: url('../img/camping-bg.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -327,8 +349,6 @@ input[type=button] {
 .retreat-photo img {
   display: flex;
   justify-content: center;
-  width: 100%;
-
 }
 
 /* ==========================================================================
