@@ -240,6 +240,10 @@ figure {
   
   footer .social-icons p {
     align-items: center;
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
     display: flex;
     justify-content: center;
   }
@@ -544,6 +548,16 @@ input[type=button] {
     justify-content: space-around;
     padding: 33px 0;
   }
+  
+  header .content-wraper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -609,6 +623,11 @@ input[type=button] {
   footer .contact {
     margin-bottom: 0;
   }
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+  
   footer .copyright {
     width: 100%;
     justify-content: center;
