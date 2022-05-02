@@ -328,8 +328,14 @@ input[type=button] {
   justify-content: center;
 }
 
+.features i {
+  font-size:3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* ---- REVIEWS SECTION ---- */ 
@@ -567,6 +573,9 @@ input[type=button] {
   }
 
   /* Features */
+  .features h2 {
+    margin-bottom: 20px;
+  }
   .features article {
     display: flex;
     justify-content: center;
