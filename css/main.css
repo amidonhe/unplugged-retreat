@@ -111,6 +111,7 @@ p {
 ul,
 ol {
  list-style-type: none;
+ margin: 0;
 }
 
 a {
@@ -150,8 +151,7 @@ figure {
 
 /* ---- CONTENT WRAPPER ---- */ 
 .content-wrapper {
-  min-width: 360px;
-  width: 89%;
+  width: 90%;
   margin: 50px 0;
 }
 
@@ -186,9 +186,10 @@ figure {
   }
 
  .header-divider {
-	 width: 100%;
+	 background: #3a3a3a;
    height: 1px;
    margin: 10px 0 20px 0;
+   width: 100%;
   }
 
  header nav {
@@ -197,6 +198,9 @@ figure {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   
  header nav ul {
@@ -208,14 +212,12 @@ figure {
 
   header nav ul li a {
     font-size: 1.125em;
-    font-weight: 700;
-    text-transform: uppercase; 
+     
   }
 
   /* ---- FOOTER ---- */ 
   footer {
     flex-direction: column;
-    color: #ffffff;
     text-align: center;
   }
 
@@ -233,9 +235,9 @@ figure {
   }
 
   footer .social-icons {
-    align-items: center;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   
   footer .social-icons p {
@@ -246,6 +248,10 @@ figure {
     height:40px;
     display: flex;
     justify-content: center;
+  }
+
+  footer .social-icons p i {
+    font-size: 1.3125em;
   }
 
   footer .copyright {
@@ -264,6 +270,10 @@ figure {
   flex-flow: row wrap;
   justify-content: center;
   min-height: 500px;
+}
+
+.hero-area h1 {
+  line-height: 1.2em;
 }
 
 /* Aside */
@@ -333,7 +343,7 @@ input[type=button] {
 }
 
 .features i {
-  font-size:3.75em;
+  font-size: 3.75em;
   margin-bottom: 40px;
 }
 
@@ -350,6 +360,11 @@ input[type=button] {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -372,6 +387,14 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.mission .content-wrapper {
+  margin-top: 50px;
+}
+
+.mission h2 {
+  margin: 0;
 }
 
 /* Map */
@@ -400,9 +423,15 @@ input[type=button] {
   justify-content: center;
 }
 
-.contact-content {
-  margin: 0;
+.contact-info .content-wrapper {
+  margin: 35px 0;
+  padding-bottom: 17px;
 }
+
+.contact-info h2 {
+  margin-bottom: 0;
+}
+
 
 /* ==========================================================================
    FAQ Page
@@ -414,19 +443,27 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  }
+}
 
 .faq .content-wrapper {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 50px 0 0 0;
+  
 }
 
 .faq h2 {
   margin-bottom: 40px;
+  margin-top: 0;
+  line-height: 1.1em;
 }
+
+.faq h3 {
+  margin: 0;
+}
+
 
 .faq-content {
   margin-bottom: 50px;
@@ -527,7 +564,7 @@ input[type=button] {
   /* ----General TABLET styles---- */
 
   /* Content Wrapper */
-  .content-wraper {
+  .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
   }
@@ -535,12 +572,16 @@ input[type=button] {
   /* Font Styles */
   h1 {
     font-size: 3em;
+    line-height: 1;
+    margin-bottom: 320px;
   }
   h2 {
     font-size: 2.25em;
+    line-height: 1.33;
   }
   h3 {
     font-size: 1.5em;
+    line-height: 1.25;
   }
 
   /* Header */
@@ -549,7 +590,7 @@ input[type=button] {
     padding: 33px 0;
   }
   
-  header .content-wraper {
+  header .content-wrapper {
     width: 100%;
     justify-content: space-between;
   }
@@ -560,18 +601,27 @@ input[type=button] {
 
   header nav {
     width: 20%;
+    font-size: 1em;
   }
   header nav ul {
     justify-content: space-between;
   }
-  .header-divider {
-    display: none;
+  header br {
+    padding-left: 3em;
   }
   header nav ul li a {
     font-size: 1em;
   }
 
+  .header-divider {
+    display: none;
+  }
+ 
+
   /* Hero Area */
+  .hero div {
+    min-height: 600px;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -606,8 +656,18 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
   }
+  
+  .reviews article figure,
   .reviews article div {
     width: 49%;
+  }
+  
+  .reviews h2 {
+    width: 80%;
+  }
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -627,6 +687,15 @@ input[type=button] {
     width: 12.5em;
     justify-content: space-between;
   }
+
+  footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
   
   footer .copyright {
     width: 100%;
@@ -636,7 +705,9 @@ input[type=button] {
   /* ==========================================================================
   TABLET -- About Page
   ========================================================================== */
-  
+ .mission {
+   padding-top: 35px;
+ }
  .mission-content {
     align-items: center;
     display: flex;
@@ -648,19 +719,28 @@ input[type=button] {
     width: 45%;
   }
   
-  .mission .content-wrapper h2 {
-    width: 80%;
-    padding-bottom: 40px;
-  }
-
   .map figure {
     padding-bottom: 46%;
   }
-  
+
+  .contact-info .content-wrapper h2 {
+    width: 80%;
+    padding-bottom: 30px;
+  }
+
+  .contact-info h3 {
+    margin: 0;
+  }
+
   .contact-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .contact-info .content-wrapper {
+    margin-top: 50px;
+    margin-bottom: 80px;
   }
   
   /* ==========================================================================
@@ -669,19 +749,22 @@ input[type=button] {
   
   .faq .content-wrapper {
    justify-content: space-between;
+   margin-bottom: 55px;
   }
   
   .faq-content {
    flex-basis: 45%;
+   
   }
   
   .faq h2 {
     width: 100%;
+    margin-top: 55px;
  }
 
   .faq h3 {
     font-size: 0.875em;
-    font-weight: 300;
+    font-weight: 500;
   }
 }
 
@@ -690,16 +773,21 @@ input[type=button] {
 ========================================================================== */
 @media only screen and (min-width: 1200px) {
   
- /* ----General TABLET styles---- */
+ /* ----General DESKTOP styles---- */
   
  /* Content wrapper */
   .content-wrapper {
     max-width: 960px;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
   /* Font Styles */
   p {
     font-size: 1.125em;
+    line-height: 1.33;
   }
   h1 {
     font-size: 3.75em;
@@ -717,7 +805,16 @@ input[type=button] {
   
   /* Hero Area */
   .hero-area h1 {
-    width: 60%;
+    width: 75%;
+    padding-bottom: 1.5em; 
+  }
+
+  .hero-area .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: 550px;
+    margin-top: 0;
   }
 
   /* Aside */
@@ -758,13 +855,17 @@ input[type=button] {
   DESKTOP -- About Page
   ========================================================================== */
   .mission h2 {
+    width: 95%;
     font-size: 3em;
   }
-  .mission h2, .content-wrapper h2 {
-    width: 95%;
-  }
+  
   .map figure {
     padding-bottom: 38%;
+  }
+
+  .contact-info .content-wrapper h2 {
+    font-size: 3em;
+    width: 100%;
   }
 
   /* ==========================================================================
