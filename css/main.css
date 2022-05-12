@@ -104,7 +104,7 @@ body {
 /* ---- BASE FONT STYLES ---- */ 
 p {
   font-size: 0.875em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.285;
 }
 
@@ -151,8 +151,8 @@ figure {
 
 /* ---- CONTENT WRAPPER ---- */ 
 .content-wrapper {
-  width: 90%;
   margin: 50px 0;
+  width: 90%;
 }
 
 /* -------------------- BASE HEADER - FOOTER STYLES -------------------- */
@@ -178,11 +178,11 @@ figure {
   }
   
   header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    width: 60%;
   }
 
  .header-divider {
@@ -196,14 +196,15 @@ figure {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    width: 60%;
     font-size: 1.125em;
     font-weight: 700;
+    justify-content: space-between;
     text-transform: uppercase;
+    width: 60%;
   }
-  
+ 
  header nav ul {
+    align-items: center;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -212,7 +213,6 @@ figure {
 
   header nav ul li a {
     font-size: 1.125em;
-     
   }
 
   /* ---- FOOTER ---- */ 
@@ -226,8 +226,8 @@ figure {
   }
   
   footer .content-wrapper {
+    margin: 40px 0;
     width: 55%;
-    margin: 50px 0;
   }
 
   footer .contact {
@@ -235,19 +235,19 @@ figure {
   }
 
   footer .social-icons {
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
   
   footer .social-icons p {
     align-items: center;
     background-color: #527158;
     border-radius: 50%;
-    width: 40px;
-    height:40px;
     display: flex;
+    height:40px;
     justify-content: center;
+    width: 40px;
   }
 
   footer .social-icons p i {
@@ -274,6 +274,7 @@ figure {
 
 .hero-area h1 {
   line-height: 1.2em;
+  margin: 0;
 }
 
 /* Aside */
@@ -285,54 +286,59 @@ aside {
   justify-content: center;
 }
 
-aside .form {
+aside .content-wrapper {
   margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+aside h3 {
+  line-height: 0;
+}
+
+aside .form {
+  margin-top: 50px;
 }
 
 input[type=text] {
   box-sizing: border-box;
-  width: 100%;
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  width: 100%;
 }
  
 input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
   background-color: #2a423a;
+  border: none;
+  color: #e2e3ed;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
+  margin-top: 20px;
+  padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 /* ---- FEATURES SECTION ---- */ 
 
 .features {
+  align-items: center;
   background: url('../img/camping-bg.jpg') center no-repeat;
   background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-}
-
-.features h2 {
-  margin-bottom: 60px
 }
 
 .features .content-wrapper {
-  margin: 30px 0 60px;
+  margin: 25px 0 50px;
 }
 
-.features article {
-  margin: 30px 0;
-  width: 55%;
+.features h2 {
+  margin-bottom: 40px;
+  width: 93%;
 }
 
 .features .features-items {
@@ -342,14 +348,19 @@ input[type=button] {
   justify-content: center;
 }
 
-.features i {
-  font-size: 3.75em;
-  margin-bottom: 40px;
+.features article {
+  margin: 30px 0;
+  width: 55%;
 }
 
 .features p {
   margin: 0;
   text-align: center;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* ---- REVIEWS SECTION ---- */ 
@@ -363,17 +374,17 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
-  line-height: 1;
-}
-
-.reviews h3 {
-  width: 52%;
+  line-height: 1em;
+  margin: 10px 0 40px 0;
 }
 
 .retreat-photo img {
   display: flex;
   justify-content: center;
+}
+
+.reviews h3 {
+  width: 52%;
 }
 
 /* ==========================================================================
@@ -399,19 +410,19 @@ input[type=button] {
 
 /* Map */
 .map figure {
-  width: 100%;
   height: 0;
-  padding-bottom: 125%;
   overflow: hidden;
+  padding-bottom: 125%;
   position: relative;
+  width: 100%;
 }
 
 .map iframe {
-  width: 100%;
   height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 100%;
 }
 
 /* Contact */
@@ -431,7 +442,6 @@ input[type=button] {
 .contact-info h2 {
   margin-bottom: 0;
 }
-
 
 /* ==========================================================================
    FAQ Page
@@ -455,18 +465,17 @@ input[type=button] {
 }
 
 .faq h2 {
+  line-height: 1.1em;
   margin-bottom: 40px;
   margin-top: 0;
-  line-height: 1.1em;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 .faq h3 {
   margin: 0;
-}
-
-
-.faq-content {
-  margin-bottom: 50px;
 }
 
 /* ==========================================================================
@@ -561,18 +570,17 @@ input[type=button] {
 ========================================================================== */
 @media only screen and (min-width: 768px) {
   
-  /* ----General TABLET styles---- */
+  /* ---- Base TABLET styles---- */
 
   /* Content Wrapper */
   .content-wrapper {
-    max-width: 640px;
     margin: 100px 0;
+    max-width: 640px;
   }
 
   /* Font Styles */
   h1 {
     font-size: 3em;
-    line-height: 1;
     margin-bottom: 320px;
   }
   h2 {
@@ -591,83 +599,33 @@ input[type=button] {
   }
   
   header .content-wrapper {
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
   }
 
   header figure {
     width: 30%;
   }
 
-  header nav {
-    width: 20%;
-    font-size: 1em;
+  .header-divider {
+    display: none;
   }
+
+  header nav {
+    font-size: 1em;
+    width: 20%;
+  }
+
   header nav ul {
     justify-content: space-between;
   }
-  header br {
-    padding-left: 3em;
-  }
+
   header nav ul li a {
     font-size: 1em;
   }
 
-  .header-divider {
-    display: none;
-  }
- 
-
-  /* Hero Area */
-  .hero div {
-    min-height: 600px;
-  }
-
-  /* Aside */
-  aside .content-wrapper {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-  }
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 40%;
-    margin: 0;
-  }
-
-  /* Features */
-  .features h2 {
-    margin-bottom: 20px;
-  }
-  .features article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    flex-basis: 50%;
-  }
-  .features .features-item-description {
-    width: 50%
-  }
-
-  /* Reviews */
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .reviews article figure,
-  .reviews article div {
-    width: 49%;
-  }
-  
-  .reviews h2 {
-    width: 80%;
-  }
-  .reviews h3 {
-    width: 75%;
-    margin: 0;
+  header br {
+    padding-left: 3em;
   }
 
   /* Footer */
@@ -701,6 +659,79 @@ input[type=button] {
     width: 100%;
     justify-content: center;
   }
+  
+  /* ----Home Page TABLET styles---- */
+
+  /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area .content-wrapper {
+    margin-top: 5em;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 40px 0 66px 0;
+  }
+  
+  aside h3 {
+    line-height: 1.2em;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    margin: 0;
+    width: 40%;
+  }
+
+  /* Features */
+  .features .content-wrapper {
+    margin-bottom: 72px;
+    margin-top: 60px;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .features article {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  .features .features-item-description {
+    width: 50%
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .reviews h2 {
+    width: 80%;
+    margin-bottom: 24px;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+  
+  .reviews h3 {
+    margin: 0;
+    width: 75%;
+  }
 
   /* ==========================================================================
   TABLET -- About Page
@@ -724,8 +755,8 @@ input[type=button] {
   }
 
   .contact-info .content-wrapper h2 {
-    width: 80%;
     padding-bottom: 30px;
+    width: 80%;
   }
 
   .contact-info h3 {
@@ -733,14 +764,14 @@ input[type=button] {
   }
 
   .contact-content {
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
   .contact-info .content-wrapper {
-    margin-top: 50px;
     margin-bottom: 80px;
+    margin-top: 50px;
   }
   
   /* ==========================================================================
@@ -758,13 +789,13 @@ input[type=button] {
   }
   
   .faq h2 {
-    width: 100%;
     margin-top: 55px;
+    width: 100%;
  }
 
   .faq h3 {
     font-size: 0.875em;
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
@@ -805,48 +836,52 @@ input[type=button] {
   
   /* Hero Area */
   .hero-area h1 {
+    margin-bottom: 500px;
     width: 75%;
-    padding-bottom: 1.5em; 
   }
 
   .hero-area .content-wrapper {
+    align-items: flex-start;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    margin-top: 38px;
     max-height: 550px;
-    margin-top: 0;
   }
 
   /* Aside */
   aside .content-wrapper {
     justify-content: space-around;
   }
+
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
   }
 
   /* Features */
-  .features h2 {
-    width: 90%;
-  }
   .features .content-wrapper {
     margin: 70px 0 100px;
   }
+  
+  .features h2 {
+    margin-bottom: 40px;
+    width: 90%;
+  }
+ 
   .features article {
     flex-basis: 33%;
   }
 
   /* Reviews */
-  .review-body {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
+  .reviews h2 {
+    margin-bottom: 80px;
   }
+
   .retreat-photo {
-   width: 49%;
-   justify-content: flex-start;
+    justify-content: flex-start;
+    width: 49%;
   }
+
   .reviews .lacrue {
     width: 49%;
   }
@@ -855,8 +890,8 @@ input[type=button] {
   DESKTOP -- About Page
   ========================================================================== */
   .mission h2 {
-    width: 95%;
     font-size: 3em;
+    width: 95%;
   }
   
   .map figure {
@@ -877,7 +912,7 @@ input[type=button] {
   }
   .faq h3 {
     font-size: 1.125em;
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 @media print,
