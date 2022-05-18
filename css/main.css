@@ -387,6 +387,10 @@ input[type=button] {
   width: 52%;
 }
 
+.reviews p {
+  margin-bottom: 25px;
+}
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -436,7 +440,7 @@ input[type=button] {
 
 .contact-info .content-wrapper {
   margin: 35px 0;
-  padding-bottom: 17px;
+  padding-bottom: 25px;
 }
 
 .contact-info h2 {
