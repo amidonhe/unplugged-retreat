@@ -202,13 +202,15 @@ figure {
     text-transform: uppercase;
     width: 60%;
   }
- 
+
  header nav ul {
     align-items: center;
     display: flex;
     justify-content: space-around;
     list-style: none;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   header nav ul li a {
@@ -292,7 +294,7 @@ aside .content-wrapper {
 }
 
 aside h3 {
-  line-height: 0;
+  line-height: 1.2em;
 }
 
 aside .form {
@@ -628,9 +630,7 @@ input[type=button] {
     font-size: 1em;
   }
 
-  header br {
-    padding-left: 3em;
-  }
+
 
   /* Footer */
   footer .content-wrapper {
